@@ -1,0 +1,233 @@
+{
+	"roots": [
+		{
+			"id": 7,
+			"name": "测试",
+			"is_root": true,
+			"img": "http://127.0.0.1:8080/cms-pictures/categorle/ceshiimg.jpg",
+			"parent_id": null
+		},
+		{
+			"id": 1,
+			"name": "服装",
+			"is_root": true,
+			"img": "http://127.0.0.1:8080/cms-pictures/categorle/yifuimg.jpg",
+			"parent_id": null
+		},
+		{
+			"id": 2,
+			"name": "包包",
+			"is_root": true,
+			"img": "http://127.0.0.1:8080/cms-pictures/categorle/baoimg.jpg",
+			"parent_id": null
+		},
+		{
+			"id": 3,
+			"name": "鞋",
+			"is_root": true,
+			"img": "http://127.0.0.1:8080/cms-pictures/categorle/xieimg.jpg",
+			"parent_id": null
+		},
+		{
+			"id": 4,
+			"name": "饰品",
+			"is_root": true,
+			"img": "http://127.0.0.1:8080/cms-pictures/categorle/shipingimg.jpg",
+			"parent_id": null
+		},
+		{
+			"id": 5,
+			"name": "居家",
+			"is_root": true,
+			"img": "http://127.0.0.1:8080/cms-pictures/categorle/jujiaimg.jpg",
+			"parent_id": null
+		},
+		{
+			"id": 6,
+			"name": "工艺",
+			"is_root": true,
+			"img": "http://127.0.0.1:8080/cms-pictures/categorle/gongyiimg.jpg",
+			"parent_id": null
+		}
+	],
+	"subs": [
+		{
+			"id": 8,
+			"name": "测试",
+			"is_root": false,
+			"img": "http://127.0.0.1:8080/cms-pictures/categorle/ceshi1.jpg",
+			"parent_id": 2,
+			"index": null
+		},
+		{
+			"id": 9,
+			"name": "手包",
+			"is_root": false,
+			"img": "http://127.0.0.1:8080/cms-pictures/categorle/bao1.jpg",
+			"parent_id": 2,
+			"index": null
+		},
+		{
+			"id": 10,
+			"name": "旅行包",
+			"is_root": false,
+			"img": "http://127.0.0.1:8080/cms-pictures/categorle/bao2.jpg",
+			"parent_id": 2,
+			"index": null
+		},
+		{
+			"id": 11,
+			"name": "单肩包",
+			"is_root": false,
+			"img": "http://127.0.0.1:8080/cms-pictures/categorle/bao3.jpg",
+			"parent_id": 2,
+			"index": null
+		},
+		{
+			"id": 12,
+			"name": "文具",
+			"is_root": false,
+			"img": "http://127.0.0.1:8080/cms-pictures/categorle/gongyi1.jpg",
+			"parent_id": 6,
+			"index": null
+		},
+		{
+			"id": 13,
+			"name": "收纳",
+			"is_root": false,
+			"img": "http://127.0.0.1:8080/cms-pictures/categorle/jujia1.jpg",
+			"parent_id": 5,
+			"index": null
+		},
+		{
+			"id": 14,
+			"name": "毛巾",
+			"is_root": false,
+			"img": "http://127.0.0.1:8080/cms-pictures/categorle/jujia2.jpg",
+			"parent_id": 5,
+			"index": null
+		},
+		{
+			"id": 15,
+			"name": "四件套",
+			"is_root": false,
+			"img": "http://127.0.0.1:8080/cms-pictures/categorle/jujia3.jpg",
+			"parent_id": 5,
+			"index": null
+		},
+		{
+			"id": 16,
+			"name": "台灯",
+			"is_root": false,
+			"img": "http://127.0.0.1:8080/cms-pictures/categorle/jujia4.jpg",
+			"parent_id": 5,
+			"index": null
+		},
+		{
+			"id": 17,
+			"name": "家具",
+			"is_root": false,
+			"img": "http://127.0.0.1:8080/cms-pictures/categorle/jujia5.jpg",
+			"parent_id": 5,
+			"index": null
+		},
+		{
+			"id": 18,
+			"name": "酷玩",
+			"is_root": false,
+			"img": "http://127.0.0.1:8080/cms-pictures/categorle/shiping1.jpg",
+			"parent_id": 4,
+			"index": null
+		},
+		{
+			"id": 19,
+			"name": "束带",
+			"is_root": false,
+			"img": "http://127.0.0.1:8080/cms-pictures/categorle/shiping2.jpg",
+			"parent_id": 4,
+			"index": null
+		},
+		{
+			"id": 20,
+			"name": "平底鞋",
+			"is_root": false,
+			"img": "http://127.0.0.1:8080/cms-pictures/categorle/xie1.jpg",
+			"parent_id": 3,
+			"index": null
+		},
+		{
+			"id": 21,
+			"name": "拖鞋",
+			"is_root": false,
+			"img": "http://127.0.0.1:8080/cms-pictures/categorle/xie2.jpg",
+			"parent_id": 3,
+			"index": null
+		},
+		{
+			"id": 22,
+			"name": "运动鞋",
+			"is_root": false,
+			"img": "http://127.0.0.1:8080/cms-pictures/categorle/xie3.jpg",
+			"parent_id": 3,
+			"index": null
+		},
+		{
+			"id": 23,
+			"name": "高跟鞋",
+			"is_root": false,
+			"img": "http://127.0.0.1:8080/cms-pictures/categorle/xie4.jpg",
+			"parent_id": 3,
+			"index": null
+		},
+		{
+			"id": 24,
+			"name": "衬衫",
+			"is_root": false,
+			"img": "http://127.0.0.1:8080/cms-pictures/categorle/yifu1.jpg",
+			"parent_id": 1,
+			"index": null
+		},
+		{
+			"id": 25,
+			"name": "T恤",
+			"is_root": false,
+			"img": "http://127.0.0.1:8080/cms-pictures/categorle/yifu2.jpg",
+			"parent_id": 1,
+			"index": null
+		},
+		{
+			"id": 26,
+			"name": "牛仔裤",
+			"is_root": false,
+			"img": "http://127.0.0.1:8080/cms-pictures/categorle/yifu3.jpg",
+			"parent_id": 1,
+			"index": null
+		},
+		{
+			"id": 27,
+			"name": "针织衫",
+			"is_root": false,
+			"img": "http://127.0.0.1:8080/cms-pictures/categorle/yifu4.jpg",
+			"parent_id": 1,
+			"index": null
+		},
+		{
+			"id": 28,
+			"name": "连衣裙",
+			"is_root": false,
+			"img": "http://127.0.0.1:8080/cms-pictures/categorle/yifu5.jpg",
+			"parent_id": 1,
+			"index": null
+		},
+		{
+			"id": 29,
+			"name": "风衣",
+			"is_root": false,
+			"img": "http://127.0.0.1:8080/cms-pictures/categorle/yifu6.jpg",
+			"parent_id": 1,
+			"index": null
+		}
+
+	]
+
+}

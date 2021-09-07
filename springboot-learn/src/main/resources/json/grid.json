@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "title": "服装",
+        "img": "http://127.0.0.1:8080/cms-pictures/grid/grid1.jpg",
+        "name": null,
+        "category_id": null,
+        "root_category_id": 2
+    },
+    {
+        "id": 2,
+        "title": "包包",
+        "img": "http://127.0.0.1:8080/cms-pictures/grid/grid2.jpg",
+        "name": null,
+        "category_id": null,
+        "root_category_id": 3
+    },
+    {
+        "id": 3,
+        "title": "鞋",
+        "img": "http://127.0.0.1:8080/cms-pictures/grid/grid3.jpg",
+        "name": null,
+        "category_id": null,
+        "root_category_id": 1
+    },
+    {
+        "id": 4,
+        "title": "饰品",
+        "img": "http://127.0.0.1:8080/cms-pictures/grid/grid4.jpg",
+        "name": null,
+        "category_id": null,
+        "root_category_id": 5
+    },
+    {
+        "id": 5,
+        "title": "居家",
+        "img": "http://127.0.0.1:8080/cms-pictures/grid/grid5.jpg",
+        "name": null,
+        "category_id": null,
+        "root_category_id": 4
+    },
+    {
+        "id": 6,
+        "title": "工艺",
+        "img": "http://127.0.0.1:8080/cms-pictures/grid/grid6.jpg",
+        "name": null,
+        "category_id": null,
+        "root_category_id": 24
+    }
+]
