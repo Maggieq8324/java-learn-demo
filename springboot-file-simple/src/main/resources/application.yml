@@ -1,0 +1,28 @@
+spring:
+  # 文件编码 UTF8
+  mandatory-file-encoding: UTF-8
+
+server:
+  # 服务端口
+  port: 8000
+
+#文件上传配置
+file:
+  # 文件服务域名
+  domain: http://localhost:8000/
+  # 排除文件类型
+  exclude:
+  # 包括文件类型
+  include:
+    - .jpg
+    - .png
+    - .jpeg
+  # 文件最大数量
+  nums: 10
+  # 服务器文件路径
+  serve-path: assets/**
+  # 单个文件最大体积
+  single-limit: 2MB
+  # 本地文件保存位置
+  store-dir: assets/
+
