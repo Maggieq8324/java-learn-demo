@@ -1,0 +1,29 @@
+spring:
+  application:
+    name: mybatis-learn
+  # 文件编码 UTF8
+  mandatory-file-encoding: UTF-8
+  # 数据源配置，请修改为你项目的实际配置
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/cms?useSSL=false&serverTimezone=UTC&characterEncoding=UTF8
+    username: root
+    password: sunday
+
+# mybatis-plus配置
+mybatis-plus:
+  configuration:
+    # 开启下划线转驼峰
+    map-underscore-to-camel-case: true
+  # global-config:
+    # 开启/关闭 banner 打印
+    # banner: false
+    # db-config:
+      # 逻辑删除（软删除）
+      # logic-delete-value: NOW()
+      # logic-not-delete-value: 'NULL'
+  # mapper路径位置
+  mapper-locations: classpath:mapper/*.xml
+
+server:
+  port: 8084
