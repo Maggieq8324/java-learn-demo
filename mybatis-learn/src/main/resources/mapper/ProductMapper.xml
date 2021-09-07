@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.coisini.mybatislearn.mapper.ProductMapper">
+    <resultMap id="BaseResultMap" type="com.coisini.mybatislearn.model.Product">
+        <id column="id" property="id"/>
+        <result column="title" property="title"/>
+        <result column="create_time" property="createTime"/>
+    </resultMap>
+
+    <select id="getProducts" resultMap="BaseResultMap">
+        select * from product
+    </select>
+
+	<!-- useGeneratedKeys="true" 通过jdbc getGeneratedKeys方法获取主键 -->
+	<!-- keyProperty="id" 映射到resultMap id 属性上 -->
+    <insert id="insertProduct" useGeneratedKeys="true" keyProperty="id"
+            parameterType="com.coisini.mybatislearn.model.Product">
+        INSERT INTO product(title) VALUES (#{title})
+    </insert>
+</mapper>
+

@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: mybatis-learn
+  # 文件编码 UTF8
+  mandatory-file-encoding: UTF-8
+  # 数据源配置，请修改为你项目的实际配置
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/cms?useSSL=false&serverTimezone=UTC&characterEncoding=UTF8
+    username: root
+    password: sunday
+
+# mybatis配置（顶头开始写，否则读取不到）
+mybatis:
+  # mapper路径位置
+  mapper-locations: classpath:mapper/*.xml
+  configuration:
+    # 开启下划线转驼峰
+    map-underscore-to-camel-case: true
+
+server:
+  port: 8083
