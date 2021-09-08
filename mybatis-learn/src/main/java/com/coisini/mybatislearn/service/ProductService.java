@@ -10,6 +10,7 @@ package com.coisini.mybatislearn.service;
 
 import com.coisini.mybatislearn.mapper.ProductMapper;
 import com.coisini.mybatislearn.model.Product;
+import com.coisini.mybatislearn.vo.ProductDetailVo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import java.util.List;
@@ -46,5 +47,9 @@ public class ProductService {
 
         productMapper.insertProduct(product);
         return product.getId();
+    }
+
+    public ProductDetailVo getDetail(Integer id) {
+        return productMapper.getDetail(id);
     }
 }

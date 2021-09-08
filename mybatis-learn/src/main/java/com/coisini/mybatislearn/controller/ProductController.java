@@ -2,8 +2,10 @@ package com.coisini.mybatislearn.controller;
 
 import com.coisini.mybatislearn.model.Product;
 import com.coisini.mybatislearn.service.ProductService;
+import com.coisini.mybatislearn.vo.ProductDetailVo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
@@ -40,6 +42,17 @@ public class ProductController {
     @GetMapping("/insert")
     public long insertProduct() {
         return productService.insertProduct();
+    }
+
+    /**
+     * 查询明细
+     * 多表查询
+     * @param id
+     * @return
+     */
+    @GetMapping("/{id}/detail")
+    public ProductDetailVo getDetail(@PathVariable(value = "id") Integer id) {
+        return productService.getDetail(id);
     }
 
 }

@@ -8,6 +8,23 @@
         <result column="create_time" property="createTime"/>
     </resultMap>
 
+    <!-- extends="BaseResultMap" 继承BaseResultMap的所有属性 -->
+    <!--    <resultMap id="DetailResultMap" type="com.coisini.mybatislearn.vo.ProductDetailVo" extends="BaseResultMap">-->
+
+    <!--    </resultMap>-->
+
+    <!-- 非同名转换 autoMapping 自动映射 -->
+    <resultMap autoMapping="true" id="DetailResultMap" type="com.coisini.mybatislearn.vo.ProductDetailVo">
+        <id column="id" property="id"/>
+        <!-- property 模型中映射的字段名 ofType 模型中映射的字段类型 -->
+        <collection property="itemTitleList" ofType="java.lang.String">
+            <constructor>
+                <!-- column 指定数据集的字段名 -->
+                <arg column="item_title"></arg>
+            </constructor>
+        </collection>
+    </resultMap>
+
     <select id="getProducts" resultMap="BaseResultMap">
         select * from product
     </select>
@@ -18,5 +35,27 @@
             parameterType="com.coisini.mybatislearn.model.Product">
         INSERT INTO product(title) VALUES (#{title})
     </insert>
+
+    <!-- reusultMap对应实体 -->
+<!--    <select id="getDetail" resultMap="DetailResultMap">-->
+<!--        select * from product-->
+<!--            where id = #{id}-->
+<!--    </select>-->
+
+    <!-- resultType使用as指定别名 -->
+<!--    <select id="getDetail" resultType="com.coisini.mybatislearn.vo.ProductDetailVo">-->
+<!--        select a.id as id, a.title as title, a.create_time as createTime-->
+<!--            from product a-->
+<!--        where id = #{id}-->
+<!--    </select>-->
+
+    <select id="getDetail" resultMap="DetailResultMap">
+        select a.id, a.title, a.create_time,
+               b.title as item_title
+            from product a
+                left join product_item b on a.id = b.product_id
+        where a.id = #{id}
+    </select>
+
 </mapper>
 

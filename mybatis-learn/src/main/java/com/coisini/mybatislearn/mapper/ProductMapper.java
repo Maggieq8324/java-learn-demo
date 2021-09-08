@@ -1,6 +1,7 @@
 package com.coisini.mybatislearn.mapper;
 
 import com.coisini.mybatislearn.model.Product;
+import com.coisini.mybatislearn.vo.ProductDetailVo;
 import org.apache.ibatis.annotations.Select;
 import org.springframework.stereotype.Repository;
 import java.util.List;
@@ -28,5 +29,12 @@ public interface ProductMapper {
      * @return
      */
     long insertProduct(Product product);
+
+    /**
+     * 查询明细
+     * @param id
+     * @return
+     */
+    ProductDetailVo getDetail(Integer id);
 
 }
