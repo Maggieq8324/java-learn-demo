@@ -1,0 +1,9 @@
+server:
+  # 服务端口
+  port: 8000
+
+coisini:
+  security:
+    jwt-key: coisini
+    # 过期时间
+    token-expired-in: 86400000
