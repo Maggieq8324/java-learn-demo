@@ -1,0 +1,15 @@
+#端口号
+server:
+  port: 31091
+
+
+spring:
+  profiles:
+    active: dev
+
+
+
+
+
+
+
