@@ -28,7 +28,7 @@ public class DynamicMailConfig {
         return mail;
     }
 
-    public void setDynamicToMail(String mail) {
+    public void setDynamicMail(String mail) {
         this.mail = mail;
     }
 

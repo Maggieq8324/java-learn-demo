@@ -51,7 +51,7 @@ public class InitializationConfig implements ApplicationRunner {
             String mail = YmlUtil.getValByKey(lhm,"coisini.mail").toString();
             DynamicMailConfig instance = DynamicMailConfig.getInstance();
             if (!instance.getDynamicMail().equals(mail)) {
-                instance.setDynamicToMail(mail);
+                instance.setDynamicMail(mail);
                 log.info("实时配置mail更新：" + instance.getDynamicMail());
             }
         } catch (Exception e){
