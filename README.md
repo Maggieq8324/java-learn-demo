@@ -11,6 +11,8 @@ Java 学习记录 Demo
 ├── springboot-file-simple 	       SpringBoot静态资源存储简易版
 ├── springboot-learn 		  SpringBoot学习Demo
 ├── coisini-readexcel		   读取Excel文件
+├── springboot-dynamic-yml     SpringBoot动态配置yml
 
 
- 
+
+
