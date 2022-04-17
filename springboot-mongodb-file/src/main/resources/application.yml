@@ -1,0 +1,17 @@
+server:
+  port: 31091
+
+spring:
+  servlet:
+    multipart:
+      max-file-size: 100MB
+  data:
+    mongodb:
+      host: 127.0.0.1
+      port: 27017
+      database: admin
+      username: root
+      password: sunday
+
+fileUploadService:
+  impl: fileMongoServiceImpl
